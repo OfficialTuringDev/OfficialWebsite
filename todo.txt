@@ -2,3 +2,4 @@
 2. Creating Twitter account
 3. Use netlify forms for my forms. 
 4. include the link in the important link
+5. Add after submission action to the HTML form
