@@ -93,7 +93,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1 class="text-center">Sign Up to become a member+++</h1>
+                    <h1 class="text-center">Sign Up to become a member of TuringDev Community</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -107,28 +107,33 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3">
                     <div class="text-box mt-5 mb-5">
-                        <p class="mb-4">Fill out the form below to sign up for the service. Already signed up? Then just <a class="blue" href="log-in.html">Log In</a></p>
+                        <p class="mb-4">Fill out the form below to join Turing Dev Community. Would you rather just contact us? <a class="blue" href="contact.html">Contact Us</a></p>
 
                         <!-- Sign Up Form -->
-                        <form id="signUpForm" name="MembershipSignUp" action="POST" data-netlify="true">
+                        <form id="signUpForm" name="MembershipSignUp" action="POST" data-netlify="true" data-netlify-recaptcha="true">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" name="fname" id="fname" required>
+                                <label class="label-control" for="fname">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" name="lname" id="lname" required>
+                                <label class="label-control" for="lname">Last Name</label>
+                            </div>
                             <div class="form-group">
                                 <input type="email" class="form-control-input" name="email" id="email" required>
                                 <label class="label-control" for="email">Email</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" name="name" id="name" required>
-                                <label class="label-control" for="name">Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" name="password" id="password" required>
-                                <label class="label-control" for="password">Password</label>
+                                <input type="number" class="form-control-input" name="pnum" id="pnum" required>
+                                <label class="label-control" for="pnum">Phone Number</label>
                             </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" name="terms" id="terms" value="Agreed-to-Terms" required>I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>
+                                <input type="checkbox" name="terms" id="terms" value="Agreed-to-Terms" required>I agree with the site's stated <a href="https://www.freeprivacypolicy.com/live/c755c645-74a9-4d1f-82af-a0ede8d6e305" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms & Conditions</a>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Sign Up</button>
+                                <button type="submit" class="form-control-submit-button">Submit</button>
                             </div>
+                            <div data-netlify-recaptcha="true"></div>
                         </form>
                         <!-- end of sign up form -->
 
